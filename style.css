@@ -69,7 +69,6 @@ body {
   color: white;
   display: flex;
   margin: 3rem;
-  /*border: 2px solid white;*/
   border-radius: 2rem;
 }
 .table {
@@ -107,7 +106,6 @@ th {
 
 /*Contact styling*/
 #contact-form {
-  /*background-color: blue;*/
   display: flex;
   flex-direction: column;
   align-items: center;

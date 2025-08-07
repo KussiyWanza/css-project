@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+/*Url for roboto font*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*url for roboto font end*/
+/*Nav styles*/
+h1 span {
+  color: red;
+}
+nav {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  /*Making the font family Roboto*/
+  font-family: "Roboto", sans-serif;
+  /*font family ends*/
+  border-bottom: 2px solid white;
+}
+nav ul {
+  list-style: none;
+}
+/*Making the display of the navbar inline*/
+nav ul li {
+  display: inline;
+  margin: 0px 15px;
+  font-weight: 900;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+/*Nav style end*/
+
+/*Body styling*/
+body {
+  background-image: url(/imgs/img3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  color: white;
+  user-select: none;
+  font-family: roboto, sans-serif;
+}
+#audio-section {
+  margin: 1rem;
+}
+/*Body style end*/
+
+/*Table Styles*/
+/*Img styling*/
+.img-config {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+}
+#table-section {
+  color: white;
+  display: flex;
+  margin: 3rem;
+  /*border: 2px solid white;*/
+  border-radius: 2rem;
+}
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: red;
+}
+/*Table styles end*/
+
+/*Footer section styling*/
+#footer {
+  background-color: black;
+  width: 100%;
+  border-top: 1px solid white;
+  padding: 1rem;
+  font-family: roboto, sans-serif;
+}
+
+.cm-span {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+/*Contact styling*/
+#contact-form {
+  /*background-color: blue;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact-form input {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid red;
+  border-radius: 0.5rem;
+  background-color: rgb(43, 43, 43);
+  outline-style: none;
+  width: 25rem;
+}
+#submit {
+  margin: 1rem;
+  color: white;
+  font-size: 1rem;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  height: 3rem;
+  width: 6rem;
+  cursor: pointer;
+  outline-style: none;
+  border: 2px solid red;
+  transition: 0.1s;
+}
+#submit:hover {
+  background-color: rgb(158, 0, 0);
+}

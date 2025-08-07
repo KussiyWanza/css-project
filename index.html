@@ -3,44 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>css project</title>
+    <!--Linking the 'style.css' file to our HTML-->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <style>
-      table {
-        width: 80%;
-        border-collapse: collapse;
-        margin: 20px auto;
-      }
-      th,
-      td {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: left;
-      }
-      th {
-        background-color: #f4f4f4;
-      }
-    </style>
     <nav>
-      <h1>My Portfolio.</h1>
+      <h1>My <span>Portfolio.</span></h1>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Work</li>
-        <li>Resume</li>
-        <li>Contact</li>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">Resume</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
     </nav>
 
-    <section>
+    <!--Audio section-->
+    <section id="audio-section">
       <audio controls>
         <source src="test.mp3" type="audio/mpeg" />
       </audio>
     </section>
+    <!--Audio section end-->
 
-    <section>
-      <table>
+    <!--Table section-->
+    <section id="table-section">
+      <!--Img section-->
+      <div class="profile-img">
+        <img src="/imgs/suit pfp.jpg" alt="suit" class="img-config" />
+      </div>
+      <!--Img section end-->
+      <table class="table">
         <tr>
           <th>Category</th>
           <th>Details</th>
@@ -51,11 +45,11 @@
         </tr>
         <tr>
           <td>Major</td>
-          <td>Computer Science</td>
+          <td>Software Engineering</td>
         </tr>
         <tr>
           <td>University</td>
-          <td>Example University, Class of 2026</td>
+          <td>Nile University, Class of 2027</td>
         </tr>
         <tr>
           <td>Skills</td>
@@ -71,56 +65,24 @@
         </tr>
       </table>
     </section>
+    <!--Table section end-->
 
-    <footer>
-      <span>Contact me:</span>
+    <!--Footer section-->
+    <footer id="footer">
+      <span class="cm-span">Contact me</span>
       <!--Contact me form-->
-      <form>
-        <div>
-          <label for="fullname">Name <sup>*</sup></label>
-          <input type="text" id="fullname" />
-        </div>
-
-        <div>
-          <label for="phone number">Phone number <sup>*</sup></label>
-          <br />
-          <select name="phone number" id="phone number">
-            <option value="Nigeria">Nigeria</option>
-            <option value="United states">United states</option>
-            <option value="Ghana">Ghana</option>
-          </select>
-          <input type="tel" />
-        </div>
-
-        <div>
-          <label for="email">Email <sup>*</sup></label>
-          <br />
-          <input type="email" id="email" />
-        </div>
-
-        <div>
-          <label for="location">Location <sup>*</sup></label>
-          <select name="location" id="location">
-            <option value="">Please select</option>
-            <option value="abuja hackerspace">Abuja Hackerspaces</option>
-            <option value="lagos hackerspace">Lagos Hackerspaces</option>
-          </select>
-        </div>
-        <button type="submit">submit</button>
+      <form id="contact-form">
+        <input type="text" name="" placeholder="First name" required />
+        <input type="text" name="" placeholder="Last name" required />
+        <input type="email" name="" placeholder="E-mail" required />
+        <input type="number" name="" placeholder="Phone number (optional)" />
+        <button id="submit">Submit</button>
       </form>
-      <!--Contact us form ends-->
-      <div>
-        <a href="" target="_blank">
-          <i class="fa-brands fa-square-facebook"></i>
-        </a>
-
-        <a href="" target="_blank">
-          <i class="fa-brands fa-square-instagram"></i>
-        </a>
-      </div>
+      <!--Contact me form ends-->
       <hr />
       <p>Copyright XYZ holdings 2025</p>
     </footer>
+    <!--Footer section end-->
 
     <script
       src="https://kit.fontawesome.com/4bde231455.js"
